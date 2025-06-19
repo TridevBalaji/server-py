@@ -1,6 +1,6 @@
 Flask==3.0.3
 flask-cors==4.0.1
-tensorflow==2.16.1
-pillow==10.3.0
-numpy==1.26.4
-huggingface_hub==0.23.2
+tensorflow==2.10.0
+pillow
+numpy
+huggingface_hub
