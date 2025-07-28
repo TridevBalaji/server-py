@@ -1,7 +1,1 @@
 flask
-flask-cors
-tensorflow==2.13
-numpy
-pillow
-huggingface_hub
-gunicorn
