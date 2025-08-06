@@ -17,8 +17,7 @@ class_names = [
     'Laseration', 'Normal', 'Pressure Wounds', 'Surgical Wounds',
     'Venous Wounds', 'glioma', 'meningioma', 'notumor', 'pituitary'
 ]
-def hello():
-    return "Hello, World! This is the Python server."
+
 def load_model():
     global model
     try:
@@ -104,9 +103,7 @@ def get_classes():
     return jsonify({'classes': class_names, 'total_classes': len(class_names)})
 
 if __name__ == '__main__':
-    hello()
     load_model()
     port = int(os.environ.get('PORT', 5001))
     print(f"Starting Python server on port {port}")
     app.run(host='0.0.0.0', port=port, debug=True)
-    
